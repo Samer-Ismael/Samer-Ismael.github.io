@@ -358,109 +358,6 @@
 </div>
 
 
-  <style>
-
-    .lifemap-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 50vh;
-    }
-
-    .lifemap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 80%;
-    }
-
-    .lifemap-event {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      margin: 20px 0;
-      position: relative;
-    }
-
-    .lifemap-circle {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background-color: #083430;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #e0e0e0;
-      font-size: 24px;
-    }
-
-    .lifemap-info {
-      background-color: #03021e;
-      border: 2px solid #5c2e2e;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      margin-left: 20px;
-      flex: 1;
-      position: relative;
-    }
-
-    .lifemap-title {
-      font-size: 24px;
-      color: #876341;
-    }
-
-    .lifemap-description {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-
-    .lifemap-circle.no-line::after {
-      content: none;
-    }
-
-    /* Custom CSS for animation */
-    .lifemap-event:hover .lifemap-circle::after {
-      height: 200%;
-    }
-
-    .lifemap-event:hover .lifemap-info {
-      border: 2px solid #a7a8aa;
-      background-color: #1d2127;
-      color: #a7a8aa;
-    }
-
-  </style>
-
-  <div class="lifemap-container">
-    <div class="lifemap">
-      <div class="lifemap-event">
-        <div class="lifemap-circle">0</div>
-        <div class="lifemap-info">
-          <h3 class="lifemap-title">Arbetsförmedlingen</h3>
-          <p class="lifemap-description">People contact and service</p>
-          <p>Date: 2016 - 2018</p>
-        </div>
-      </div>
-      <div class="lifemap-event">
-        <div class="lifemap-circle">1</div>
-        <div class="lifemap-info">
-          <h3 class="lifemap-title">MTRX</h3>
-          <p class="lifemap-description">High-level people contact and service</p>
-          <p>Date: 2018 - 2023</p>
-        </div>
-      </div>
-      <div class="lifemap-event">
-        <div class="lifemap-circle">2</div>
-        <div class="lifemap-info">
-          <h3 class="lifemap-title">Java-Utvecklare</h3>
-          <p class="lifemap-description">Studying Java development and having a lot of fun doing so</p>
-          <p>Date: 2023 - Present</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
 <div class="container">
 
   <!-- Style for cards -->
@@ -541,8 +438,113 @@
 
   </div>
 
+
+
 </div>
 
+
+<style>
+
+  .lifemap-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+  .lifemap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  .lifemap-event {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+  }
+
+  .lifemap-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #083430;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e0e0e0;
+    font-size: 24px;
+  }
+
+  .lifemap-info {
+    background-color: #03021e;
+    border: 2px solid #5c2e2e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    flex: 1;
+    position: relative;
+  }
+
+  .lifemap-title {
+    font-size: 24px;
+    color: #876341;
+  }
+
+  .lifemap-description {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .lifemap-circle.no-line::after {
+    content: none;
+  }
+
+  /* Custom CSS for animation */
+  .lifemap-event:hover .lifemap-circle::after {
+    height: 200%;
+  }
+
+  .lifemap-event:hover .lifemap-info {
+    border: 2px solid #a7a8aa;
+    background-color: #1d2127;
+    color: #a7a8aa;
+  }
+
+</style>
+
+<div class="lifemap-container">
+  <div class="lifemap">
+    <div class="lifemap-event">
+      <div class="lifemap-circle">0</div>
+      <div class="lifemap-info">
+        <h3 class="lifemap-title">Arbetsförmedlingen</h3>
+        <p class="lifemap-description">People contact and service</p>
+        <p>Date: 2016 - 2018</p>
+      </div>
+    </div>
+    <div class="lifemap-event">
+      <div class="lifemap-circle">1</div>
+      <div class="lifemap-info">
+        <h3 class="lifemap-title">MTRX</h3>
+        <p class="lifemap-description">High-level people contact and service</p>
+        <p>Date: 2018 - 2023</p>
+      </div>
+    </div>
+    <div class="lifemap-event">
+      <div class="lifemap-circle">2</div>
+      <div class="lifemap-info">
+        <h3 class="lifemap-title">Java-Utvecklare</h3>
+        <p class="lifemap-description">Studying Java development and having a lot of fun doing so</p>
+        <p>Date: 2023 - Present</p>
+      </div>
+    </div>
+  </div>
+</div>
 <script crossorigin="anonymous"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
