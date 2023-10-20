@@ -3,25 +3,25 @@
 
 <head>
   <script src="script.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <meta charset="utf-8">
   <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <meta content="" property="og:title">
+  <meta content="" property="og:type">
+  <meta content="" property="og:url">
+  <meta content="" property="og:image">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link href="site.webmanifest" rel="manifest">
+  <link href="icon.png" rel="apple-touch-icon">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
-  <meta name="theme-color" content="#fafafa">
+  <meta content="#fafafa" name="theme-color">
 </head>
 
 <body>
@@ -30,10 +30,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
   <style>
     body {
       background-color: #343a40; /* Dark background color for the entire page */
@@ -92,8 +92,8 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -121,7 +121,8 @@
 <div class="container">
   <div class="row align-items-center">
     <div class="col-lg-4 text-center">
-      <img src="20220717_200612.jpg" class="img-fluid rounded" alt="Your Image" style="max-width: 350px; max-height: 350px;">
+      <img alt="Your Image" class="img-fluid rounded" src="20220717_200612.jpg"
+           style="max-width: 350px; max-height: 350px;">
     </div>
     <div class="col-lg-8">
       <div class="card animated-card" style="background-color: #10184f; color: #e0e0e0;">
@@ -175,18 +176,31 @@
       font-family: Arial, sans-serif; /* Change to match the site font */
     }
 
+    .icon-gray-hover {
+      color: #777; /* Gray color */
+      transition: color 0.3s; /* Smooth color transition on hover */
+    }
+
+    .icon-gray-hover:hover {
+      color: #e1a56c; /* Change to blue on hover */
+    }
+
+
   </style>
 
   <!-- Java Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
       <h2 class="text-left clickable" onclick="toggleDropdown('java')">
-        <i class="fas fa-coffee"></i> <!-- This is a placeholder for a Java icon, you can replace it with the actual Java icon class -->
+        <i class="fas fa-coffee java-icon icon-gray-hover"></i>
+        <!-- This is a placeholder for a Java icon, you can replace it with the actual Java icon class -->
       </h2>
       <div class="dropdown-content" id="java-content">
         <p class="lead">
-          I'm really good at writing Java code, but Java is such a vast and flexible language that it's impossible for anyone to know everything about it.
-          It's like trying to explore every corner of a huge and ever-expanding library – you can get pretty far, but there's always more to learn.
+          I'm really good at writing Java code, but Java is such a vast and flexible language that it's impossible for
+          anyone to know everything about it.
+          It's like trying to explore every corner of a huge and ever-expanding library – you can get pretty far, but
+          there's always more to learn.
         </p>
       </div>
     </div>
@@ -195,38 +209,41 @@
     </div>
   </div>
 
+
   <!-- C# Progress Bar -->
   <div class="progress-container">
-    <div class= "dropdown">
-    <h2 class="text-left clickable" onclick="toggleDropdown('csharp')">
-      <i class="fas fa-code"></i> <!-- This is a placeholder for a C# icon, you can replace it with the actual C# icon class -->
-    </h2>
-    <div class="dropdown-content" id="csharp-content">
-      <p class="lead">
-        C# is not something I have formally studied, but I have tried to self-learn it alongside the Java course I am currently taking.
-      </p>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('csharp')">
+        <i class="fas fa-code icon-gray-hover"></i>
+        <!-- This is a placeholder for a C# icon, you can replace it with the actual C# icon class -->
+      </h2>
+      <div class="dropdown-content" id="csharp-content">
+        <p class="lead">
+          C# is not something I have formally studied, but I have tried to self-learn it alongside the Java course I am
+          currently taking.
+        </p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 30%;">30%</div>
     </div>
   </div>
-  <div class="progress">
-    <div class="progress-bar" style="width: 30%;">30%</div>
-  </div>
-</div>
-
-
 
   <!-- Frontend Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
       <h2 class="text-left clickable" onclick="toggleDropdown('frontend')">
-        <i class="fab fa-html5 "></i> <!-- HTML symbol -->
-        <i class="fab fa-css3-alt "></i> <!-- CSS symbol -->
-        <i class="fab fa-js "></i> <!-- JavaScript symbol -->
+        <i class="fab fa-html5 icon-gray-hover"></i> <!-- HTML symbol -->
+        <i class="fab fa-css3-alt icon-gray-hover"></i> <!-- CSS symbol -->
+        <i class="fab fa-js icon-gray-hover"></i> <!-- JavaScript symbol -->
       </h2>
       <div class="dropdown-content" id="frontend-content">
         <p class="lead">
           It took me a forever to build this website, and it's still not looking good.
-          Personally, I find more enjoyment in solving complex problems and diving into the workings of algorithms than in building a website.
-          However, I acknowledge that website development is a skill worth mastering, and I'm committed to learning and improving it because it's not that complicated to learn.
+          Personally, I find more enjoyment in solving complex problems and diving into the workings of algorithms than
+          in building a website.
+          However, I acknowledge that website development is a skill worth mastering, and I'm committed to learning and
+          improving it because it's not that complicated to learn.
         </p>
       </div>
     </div>
@@ -235,13 +252,12 @@
     </div>
   </div>
 
-
-
   <!-- SQL Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
       <h2 class="text-left clickable" onclick="toggleDropdown('sql')">
-        <i class="fas fa-database"></i> <!-- This is a placeholder for an SQL icon, you can replace it with the actual SQL icon class -->
+        <i class="fas fa-database icon-gray-hover"></i>
+        <!-- This is a placeholder for an SQL icon, you can replace it with the actual SQL icon class -->
       </h2>
       <div class="dropdown-content" id="sql-content">
         <p class="lead">
@@ -254,31 +270,30 @@
     </div>
   </div>
 
-
   <!-- Git Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
-    <h2 class="text-left clickable" onclick="toggleDropdown('git')">
-      <i class="fab fa-git"></i> <!-- This is a placeholder for a Git icon, replace it with the actual Git icon class if available -->
-    </h2>
-    <div class="dropdown-content" id="git-content">
-      <p class="lead">
-        Git is a very powerful tool that I use every day, and it's something we learned at school.
-      </p>
+      <h2 class="text-left clickable" onclick="toggleDropdown('git')">
+        <i class="fab fa-git icon-gray-hover"></i>
+        <!-- This is a placeholder for a Git icon, replace it with the actual Git icon class if available -->
+      </h2>
+      <div class="dropdown-content" id="git-content">
+        <p class="lead">
+          Git is a very powerful tool that I use every day, and it's something we learned at school.
+        </p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 90%;">90%</div>
     </div>
   </div>
-  <div class="progress">
-    <div class="progress-bar" style="width: 90%;">90%</div>
-  </div>
-</div>
-
-
 
   <!-- Docker Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
       <h2 class="text-left clickable" onclick="toggleDropdown('docker')">
-        <i class="fab fa-docker"></i> <!-- This is a placeholder for a Docker icon, replace it with the actual Docker icon class if available -->
+        <i class="fab fa-docker icon-gray-hover"></i>
+        <!-- This is a placeholder for a Docker icon, replace it with the actual Docker icon class if available -->
       </h2>
       <div class="dropdown-content" id="docker-content">
         <p class="lead">
@@ -292,13 +307,12 @@
     </div>
   </div>
 
-
-
   <!-- AWS Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
       <h2 class="text-left clickable" onclick="toggleDropdown('aws')">
-        <i class="fab fa-aws"></i> <!-- This is a placeholder for an AWS icon, replace it with the actual AWS icon class if available -->
+        <i class="fab fa-aws icon-gray-hover"></i>
+        <!-- This is a placeholder for an AWS icon, replace it with the actual AWS icon class if available -->
       </h2>
       <div class="dropdown-content" id="aws-content">
         <p class="lead">
@@ -312,12 +326,12 @@
     </div>
   </div>
 
-
   <!-- Linux Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
       <h2 class="text-left clickable" onclick="toggleDropdown('linux')">
-        <i class="fab fa-linux"></i> <!-- This is a placeholder for a Linux icon, replace it with the actual Linux icon class if available -->
+        <i class="fab fa-linux icon-gray-hover"></i>
+        <!-- This is a placeholder for a Linux icon, replace it with the actual Linux icon class if available -->
       </h2>
       <div class="dropdown-content" id="linux-content">
         <p class="lead">
@@ -385,21 +399,23 @@
 
       <div class="card custom-card">
         <div class="card">
-          <img src="kafka-linux-kurulumu.jpg" class="card-img-top" alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png">
+          <img alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png" class="card-img-top"
+               src="kafka-linux-kurulumu.jpg">
           <div class="card-body">
             <h5 class="card-title">Kafka Server</h5>
             <p class="card-text">Kafka server with Docker compose and SQL server and GitHub Actions </p>
-            <a href="https://github.com/Samer-Ismael/AppAndServer" class="btn btn-primary">See on GitHub</a>
+            <a class="btn btn-primary" href="https://github.com/Samer-Ismael/AppAndServer">See on GitHub</a>
           </div>
         </div>
       </div>
       <div class="card custom-card">
         <div class="card">
-          <img src="todolist-vert.png" class="card-img-top" alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png">
+          <img alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png" class="card-img-top"
+               src="todolist-vert.png">
           <div class="card-body">
             <h5 class="card-title">ToDo app</h5>
             <p class="card-text">Nice toDo app with good readme and diagram </p>
-            <a href="https://github.com/Samer-Ismael/ToDoList" class="btn btn-primary">See on GitHub</a>
+            <a class="btn btn-primary" href="https://github.com/Samer-Ismael/ToDoList">See on GitHub</a>
           </div>
         </div>
       </div>
@@ -409,9 +425,9 @@
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+<script crossorigin="anonymous"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -426,7 +442,7 @@
   ga('set', 'transport', 'beacon');
   ga('send', 'pageview')
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
 </body>
 
 </html>
