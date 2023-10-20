@@ -48,11 +48,13 @@
     .navbar-nav .nav-link {
       font-size: 25px; /* Adjust the font size to make the links (buttons) bigger */
     }
+
     .clickable {
       cursor: pointer;
       color: #10184f; /* You can choose the color you prefer */
       text-decoration: underline;
     }
+
     .dropdown-content {
       display: none;
     }
@@ -194,7 +196,8 @@
         Java <i class="fas fa-chevron-right"></i>
       </h2>
       <div class="dropdown-content" id="java-content">
-        <p>I can certainly write good programs in Java, but Java is so extensive and versatile that one can never claim to know it all.</p>
+        <p>I can certainly write good programs in Java, but Java is so extensive and versatile that one can never claim
+          to know it all.</p>
       </div>
     </div>
     <div class="progress">
@@ -209,7 +212,8 @@
         C# <i class="fas fa-chevron-right"></i>
       </h2>
       <div class="dropdown-content" id="csharp-content">
-        <p>C# is not something I have formally studied, but I have tried to self-learn it alongside the Java course I am currently taking.</p>
+        <p>C# is not something I have formally studied, but I have tried to self-learn it alongside the Java course I am
+          currently taking.</p>
       </div>
     </div>
     <div class="progress">
@@ -224,7 +228,8 @@
         Docker <i class="fas fa-chevron-right"></i>
       </h2>
       <div class="dropdown-content" id="docker-content">
-        <p>Docker is so cool that you won't want to stop using it once you understand how it works. It's also something I've self-studied.</p>
+        <p>Docker is so cool that you won't want to stop using it once you understand how it works. It's also something
+          I've self-studied.</p>
       </div>
     </div>
     <div class="progress">
@@ -269,7 +274,8 @@
         AWS <i class="fas fa-chevron-right"></i>
       </h2>
       <div class="dropdown-content" id="aws-content">
-        <p>I'm actively working on expanding my AWS knowledge and learning more about it. Soon, this progress bar will grow rapidly because AWS is so cool. I will work on obtaining a certificate. </p>
+        <p>I'm actively working on expanding my AWS knowledge and learning more about it. Soon, this progress bar will
+          grow rapidly because AWS is so cool. I will work on obtaining a certificate. </p>
       </div>
     </div>
     <div class="progress">
@@ -284,7 +290,8 @@
         Linux <i class="fas fa-chevron-right"></i>
       </h2>
       <div class="dropdown-content" id="linux-content">
-        <p>I can manage files, move them around, create, delete, and install things. I have Kali on a virtual machine, and I'm learning Linux. Soon, this progress bar will increase significantly.</p>
+        <p>I can manage files, move them around, create, delete, and install things. I have Kali on a virtual machine,
+          and I'm learning Linux. Soon, this progress bar will increase significantly.</p>
       </div>
     </div>
     <div class="progress">
@@ -299,7 +306,9 @@
         Frontend (HTML, JS, CSS) <i class="fas fa-chevron-right"></i>
       </h2>
       <div class="dropdown-content" id="frontend-content">
-        <p>It took me a forever to build this website, and it's still not looking good. Personally, I find more enjoyment in solving complex problems and diving into the workings of algorithms than in building a website."</p>
+        <p>It took me a forever to build this website, and it's still not looking good. Personally, I find more
+          enjoyment in solving complex problems and diving into the workings of algorithms than in building a
+          website."</p>
       </div>
     </div>
     <div class="progress">
@@ -312,9 +321,11 @@
     <style>
 
 
+      /* Update card styles */
       .card {
         background-color: #361c1c; /* Change this color to your desired background color */
         border: 1px solid #5c2e2e; /* Add a border if you like */
+        height: 100%; /* Set a fixed height for the cards */
       }
 
       .card-body {
@@ -334,16 +345,12 @@
         background-color: #10184f; /* Change this color to your desired button background color */
         color: #fff; /* Change this color to your desired button text color */
       }
-      .card-container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
 
+      /* Update card container styles */
       .card-container {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: space-between;
       }
 
       /* Apply the styling to the last two cards with the custom class */
@@ -351,13 +358,6 @@
         width: calc(50% - 10px); /* Adjust the width as needed */
         margin-bottom: 20px;
       }
-
-      /* Add this style to set a fixed height for the cards */
-      .card {
-        height: 100%; /* Set a fixed height for the cards */
-      }
-
-
 
 
     </style>
@@ -368,7 +368,8 @@
 
       <div class="card custom-card">
         <div class="card">
-          <img src="kafka-linux-kurulumu.jpg" class="card-img-top" alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png">
+          <img src="kafka-linux-kurulumu.jpg" class="card-img-top"
+               alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png">
 
           <div class="card-body">
             <h5 class="card-title">Kafka Server</h5>
@@ -379,7 +380,8 @@
       </div>
       <div class="card custom-card">
         <div class="card">
-          <img src="todolist-vert.png" class="card-img-top" alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png">
+          <img src="todolist-vert.png" class="card-img-top"
+               alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png">
 
           <div class="card-body">
             <h5 class="card-title">ToDo app</h5>
@@ -405,12 +407,19 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
