@@ -3,8 +3,7 @@
 
 <head>
   <script src="script.js"></script>
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
@@ -71,13 +70,19 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/Samer-Ismael" target="_blank">GitHub</a>
+          <a class="nav-link" href="https://github.com/Samer-Ismael" target="_blank">
+            <i class="fab fa-github"></i> <!-- This is the GitHub icon -->
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.linkedin.com/in/samer-ismaeel-14844b164/" target="_blank">LinkedIn</a>
+          <a class="nav-link" href="https://www.linkedin.com/in/samer-ismaeel-14844b164/" target="_blank">
+            <i class="fab fa-linkedin"></i> <!-- This is the LinkedIn icon -->
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="mailto:samerismaeelbat2@hotmail.com">Email</a>
+          <a class="nav-link" href="mailto:samerismaeelbat2@hotmail.com">
+            <i class="far fa-envelope"></i> <!-- This is an envelope icon for email -->
+          </a>
         </li>
       </ul>
     </div>
@@ -148,10 +153,11 @@
   <div class="progress-container">
     <div class="dropdown">
       <h2 class="text-left clickable" onclick="toggleDropdown('java')">
-        Java <i class="fas fa-chevron-right"></i>
+        <i class="fas fa-coffee"></i> <!-- This is a placeholder for a Java icon, you can replace it with the actual Java icon class -->
       </h2>
       <div class="dropdown-content" id="java-content">
-        <p>I'm really good at writing Java code, but Java is such a vast and flexible language that it's impossible for anyone to know everything about it.
+        <p class="lead">
+          I'm really good at writing Java code, but Java is such a vast and flexible language that it's impossible for anyone to know everything about it.
           It's like trying to explore every corner of a huge and ever-expanding library – you can get pretty far, but there's always more to learn.
         </p>
       </div>
@@ -163,30 +169,37 @@
 
   <!-- C# Progress Bar -->
   <div class="progress-container">
-    <div class="dropdown">
-      <h2 class="text-left clickable" onclick="toggleDropdown('csharp')">
-        C# <i class="fas fa-chevron-right"></i>
-      </h2>
-      <div class="dropdown-content" id="csharp-content">
-        <p>C# is not something I have formally studied, but I have tried to self-learn it alongside the Java course I am
-          currently taking.</p>
-      </div>
-    </div>
-    <div class="progress">
-      <div class="progress-bar" style="width: 30%;">30%</div>
+    <div class= "dropdown">
+    <h2 class="text-left clickable" onclick="toggleDropdown('csharp')">
+      <i class="fas fa-code"></i> <!-- This is a placeholder for a C# icon, you can replace it with the actual C# icon class -->
+    </h2>
+    <div class="dropdown-content" id="csharp-content">
+      <p class="lead">
+        C# is not something I have formally studied, but I have tried to self-learn it alongside the Java course I am currently taking.
+      </p>
     </div>
   </div>
+  <div class="progress">
+    <div class="progress-bar" style="width: 30%;">30%</div>
+  </div>
+</div>
+
+
 
   <!-- Frontend Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
       <h2 class="text-left clickable" onclick="toggleDropdown('frontend')">
-        Frontend (HTML, JS, CSS) <i class="fas fa-chevron-right"></i>
+        <i class="fab fa-html5 "></i> <!-- HTML symbol -->
+        <i class="fab fa-css3-alt "></i> <!-- CSS symbol -->
+        <i class="fab fa-js "></i> <!-- JavaScript symbol -->
       </h2>
       <div class="dropdown-content" id="frontend-content">
-        <p>It took me a forever to build this website, and it's still not looking good.
+        <p class="lead">
+          It took me a forever to build this website, and it's still not looking good.
           Personally, I find more enjoyment in solving complex problems and diving into the workings of algorithms than in building a website.
-          However, I acknowledge that website development is a skill worth mastering, and I'm committed to learning and improving it because it's not that complicated to learn.</p>
+          However, I acknowledge that website development is a skill worth mastering, and I'm committed to learning and improving it because it's not that complicated to learn.
+        </p>
       </div>
     </div>
     <div class="progress">
@@ -194,14 +207,18 @@
     </div>
   </div>
 
+
+
   <!-- SQL Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
       <h2 class="text-left clickable" onclick="toggleDropdown('sql')">
-        SQL <i class="fas fa-chevron-right"></i>
+        <i class="fas fa-database"></i> <!-- This is a placeholder for an SQL icon, you can replace it with the actual SQL icon class -->
       </h2>
       <div class="dropdown-content" id="sql-content">
-        <p>I learned SQL in school, and I can use it to manage databases, but I prefer working with NoSQL databases.</p>
+        <p class="lead">
+          I learned SQL in school, and I can use it to manage databases, but I prefer working with NoSQL databases.
+        </p>
       </div>
     </div>
     <div class="progress">
@@ -209,30 +226,35 @@
     </div>
   </div>
 
+
   <!-- Git Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
-      <h2 class="text-left clickable" onclick="toggleDropdown('git')">
-        Git <i class="fas fa-chevron-right"></i>
-      </h2>
-      <div class="dropdown-content" id="git-content">
-        <p>Git is a very powerful tool that I use every day, and it's something we learned at school.</p>
-      </div>
-    </div>
-    <div class="progress">
-      <div class="progress-bar" style="width: 90%;">90%</div>
+    <h2 class="text-left clickable" onclick="toggleDropdown('git')">
+      <i class="fab fa-git"></i> <!-- This is a placeholder for a Git icon, replace it with the actual Git icon class if available -->
+    </h2>
+    <div class="dropdown-content" id="git-content">
+      <p class="lead">
+        Git is a very powerful tool that I use every day, and it's something we learned at school.
+      </p>
     </div>
   </div>
+  <div class="progress">
+    <div class="progress-bar" style="width: 90%;">90%</div>
+  </div>
+</div>
+
 
 
   <!-- Docker Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
       <h2 class="text-left clickable" onclick="toggleDropdown('docker')">
-        Docker <i class="fas fa-chevron-right"></i>
+        <i class="fab fa-docker"></i> <!-- This is a placeholder for a Docker icon, replace it with the actual Docker icon class if available -->
       </h2>
       <div class="dropdown-content" id="docker-content">
-        <p>Docker is amazing because once you figure out how it operates, you'll be hooked! I learned it on my own.
+        <p class="lead">
+          Docker is amazing because once you figure out how it operates, you'll be hooked! I learned it on my own.
           It's like having a toolbox full of magical tools for your computer, and I can't get enough of it.
         </p>
       </div>
@@ -243,15 +265,18 @@
   </div>
 
 
+
   <!-- AWS Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
       <h2 class="text-left clickable" onclick="toggleDropdown('aws')">
-        AWS <i class="fas fa-chevron-right"></i>
+        <i class="fab fa-aws"></i> <!-- This is a placeholder for an AWS icon, replace it with the actual AWS icon class if available -->
       </h2>
       <div class="dropdown-content" id="aws-content">
-        <p>I'm actively working on expanding my AWS knowledge and learning more about it. Soon, this progress bar will
-          grow rapidly because AWS is so cool. I will work on obtaining a certificate. </p>
+        <p class="lead">
+          I'm actively working on expanding my AWS knowledge and learning more about it. Soon, this progress bar will
+          grow rapidly because AWS is so cool. I will work on obtaining a certificate.
+        </p>
       </div>
     </div>
     <div class="progress">
@@ -259,21 +284,25 @@
     </div>
   </div>
 
+
   <!-- Linux Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
       <h2 class="text-left clickable" onclick="toggleDropdown('linux')">
-        Linux <i class="fas fa-chevron-right"></i>
+        <i class="fab fa-linux"></i> <!-- This is a placeholder for a Linux icon, replace it with the actual Linux icon class if available -->
       </h2>
       <div class="dropdown-content" id="linux-content">
-        <p>I can manage files, move them around, create, delete, and install things. I have Kali on a virtual machine,
-          and I'm learning Linux. Soon, this progress bar will increase significantly.</p>
+        <p class="lead">
+          I can manage files, move them around, create, delete, and install things. I have Kali on a virtual machine,
+          and I'm learning Linux. Soon, this progress bar will increase significantly.
+        </p>
       </div>
     </div>
     <div class="progress">
       <div class="progress-bar" style="width: 15%;">15%</div>
     </div>
   </div>
+
 
 
 
