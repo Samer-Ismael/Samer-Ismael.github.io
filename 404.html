@@ -19,6 +19,14 @@
     .navbar-nav .nav-link {
       font-size: 25px; /* Adjust the font size to make the links (buttons) bigger */
     }
+    .clickable {
+      cursor: pointer;
+      color: #10184f; /* You can choose the color you prefer */
+      text-decoration: underline;
+    }
+    .dropdown-content {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -81,7 +89,7 @@
     .progress-container {
       font-family: Arial, sans-serif; /* Change to your desired font family */
       margin: 20px 0;
-      text-align: center; /* Center-align text */
+      text-align: left; /* Center-align text */
     }
 
     .progress-container h2 {
@@ -103,7 +111,14 @@
 
   <!-- Arabic Progress Bar -->
   <div class="progress-container">
-    <h2 class="text-center">Arabic</h2>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('arabic')">
+        Arabic <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="arabic-content">
+        <p>This is my motherland's language</p>
+      </div>
+    </div>
     <div class="progress">
       <div class="progress-bar" style="width: 100%;">100%</div>
     </div>
@@ -111,7 +126,14 @@
 
   <!-- English Progress Bar -->
   <div class="progress-container">
-    <h2 class="text-center">English</h2>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('english')">
+        English <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="english-content">
+        <p>Writing, reading, and speaking perfectly</p>
+      </div>
+    </div>
     <div class="progress">
       <div class="progress-bar" style="width: 90%;">90%</div>
     </div>
@@ -119,7 +141,14 @@
 
   <!-- Swedish Progress Bar -->
   <div class="progress-container">
-    <h2 class="text-center">Swedish</h2>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('swedish')">
+      Swedish <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="swedish-content">
+        <p>Writing, reading, speaking and pronouncing perfectly ;)</p>
+      </div>
+    </div>
     <div class="progress">
       <div class="progress-bar" style="width: 90%;">90%</div>
     </div>
@@ -127,7 +156,14 @@
 
   <!-- Java Progress Bar -->
   <div class="progress-container">
-    <h2 class="text-center">Java</h2>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('java')">
+        Java <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="java-content">
+        <p>I can certainly write good programs in Java, but Java is so extensive and versatile that one can never claim to know it all.</p>
+      </div>
+    </div>
     <div class="progress">
       <div class="progress-bar" style="width: 50%;">50%</div>
     </div>
@@ -135,7 +171,14 @@
 
   <!-- C# Progress Bar -->
   <div class="progress-container">
-    <h2 class="text-center">C#</h2>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('csharp')">
+        C# <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="csharp-content">
+        <p>C# is not something I have formally studied, but I have tried to self-learn it alongside the Java course I am currently taking.</p>
+      </div>
+    </div>
     <div class="progress">
       <div class="progress-bar" style="width: 30%;">30%</div>
     </div>
@@ -143,15 +186,44 @@
 
   <!-- Docker Progress Bar -->
   <div class="progress-container">
-    <h2 class="text-center">Docker</h2>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('docker')">
+        Docker <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="docker-content">
+        <p>Docker is so cool that you won't want to stop using it once you understand how it works. It's also something I've self-studied.</p>
+      </div>
+    </div>
     <div class="progress">
       <div class="progress-bar" style="width: 90%;">90%</div>
     </div>
   </div>
 
+  <!-- Git Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('git')">
+        Git <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="git-content">
+        <p>Git is a very powerful tool that I use every day, and it's something we learned at school.</p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 70%;">70%</div>
+    </div>
+  </div>
+
   <!-- SQL Progress Bar -->
   <div class="progress-container">
-    <h2 class="text-center">SQL</h2>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('sql')">
+        SQL <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="sql-content">
+        <p>I learned SQL in school, and I can use it to manage databases, but I prefer working with NoSQL databases.</p>
+      </div>
+    </div>
     <div class="progress">
       <div class="progress-bar" style="width: 50%;">50%</div>
     </div>
@@ -159,21 +231,44 @@
 
   <!-- AWS Progress Bar -->
   <div class="progress-container">
-    <h2 class="text-center">AWS</h2>
-    <div class="progress">
-      <div class="progress-bar" style="width: 20%;">20%</div>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('aws')">
+        AWS <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="aws-content">
+        <p>I'm actively working on expanding my AWS knowledge and learning more about it. Soon, this progress bar will grow rapidly because AWS is so cool. I will work on obtaining a certificate. </p>
+      </div>
     </div>
-  </div>
-
-  <div class="progress-container">
-    <h2 class="text-center">Linux</h2>
     <div class="progress">
       <div class="progress-bar" style="width: 15%;">15%</div>
     </div>
   </div>
 
+  <!-- Linux Progress Bar -->
   <div class="progress-container">
-    <h2 class="text-center">Frontend (HTML, JS, CSS)</h2>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('linux')">
+        Linux <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="linux-content">
+        <p>I can manage files, move them around, create, delete, and install things. I have Kali on a virtual machine, and I'm learning Linux. Soon, this progress bar will increase significantly.</p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 15%;">15%</div>
+    </div>
+  </div>
+
+  <!-- Frontend Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('frontend')">
+        Frontend (HTML, JS, CSS) <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="frontend-content">
+        <p>It took me a forever to build this website, and it's still not looking good. Personally, I find more enjoyment in solving complex problems and diving into the workings of algorithms than in building a website."</p>
+      </div>
+    </div>
     <div class="progress">
       <div class="progress-bar" style="width: 10%;">10%</div>
     </div>
@@ -203,7 +298,19 @@
 
   // Call the animation function when the page is loaded
   window.addEventListener('load', animateProgressBars);
+
+  function toggleDropdown(id) {
+    const dropdownContent = document.getElementById(id + '-content');
+    if (dropdownContent.style.display === 'block') {
+      dropdownContent.style.display = 'none';
+    } else {
+      dropdownContent.style.display = 'block';
+    }
+  }
+
 </script>
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
