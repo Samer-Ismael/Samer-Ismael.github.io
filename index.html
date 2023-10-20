@@ -2,6 +2,9 @@
 <html class="no-js" lang="">
 
 <head>
+  <script src="script.js"></script>
+
+
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
@@ -24,12 +27,384 @@
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #343a40; /* Dark background color for the entire page */
+      color: #fff; /* Light text color for better visibility */
+    }
 
+    .navbar {
+      background-color: #10184f; /* Dark background color for the navigation bar */
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 25px; /* Adjust the font size to make the links (buttons) bigger */
+    }
+    .clickable {
+      cursor: pointer;
+      color: #10184f; /* You can choose the color you prefer */
+      text-decoration: underline;
+    }
+    .dropdown-content {
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/Samer-Ismael" target="_blank">GitHub</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/samer-ismaeel-14844b164/" target="_blank">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:samerismaeelbat2@hotmail.com">Email</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-lg-4 text-center">
+      <img src="20220717_200612.jpg" class="img-fluid rounded" alt="Your Image"
+           style="max-width: 300px; max-height: 300px;">
+    </div>
+    <div class="col-lg-8">
+      <div class="card" style="background-color: #10184f; color: #fff;">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h3 class="card-title text-center">
+            <span class="text-primary">$</span> whoami
+          </h3>
+          <p class="card-text">
+            I'm Samer, and I'm passionate about many things in life.
+            I'm a coffee enthusiast, a guitarist exploring new musical horizons, and an avid fisherman who finds solace
+            by the water.
+            I'm a serious DIY enthusiast, always taking on new projects, and I love to code, exploring the endless
+            possibilities of the digital world.
+            When I'm not behind a computer screen, I'm under the hood of a car, constantly striving for peak performance
+            and style.
+            I'm also a student, currently studying as a Java developer specializing in integration at Yrkeshögskola
+            Campus Mölndal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Add them here! -->
+<div class="container">
+  <style>
+
+
+    /* Customize the font, color, and text alignment for progress bars */
+    .progress-container {
+      font-family: Arial, sans-serif; /* Change to your desired font family */
+      margin: 20px 0;
+      text-align: left; /* Center-align text */
+    }
+
+    .progress-container h2 {
+      font-size: 24px;
+      margin: 10px 0;
+      color: #ffffff; /* Change to your desired text color */
+    }
+
+    .progress {
+      background-color: #4d5158; /* Change to your desired background color */
+      border-radius: 5px;
+    }
+
+    .progress-bar {
+      background-color: #10184f; /* Change to your desired progress bar color */
+      font-family: Arial, sans-serif; /* Change to match the site font */
+    }
+
+  </style>
+
+  <!-- Arabic Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('arabic')">
+        Arabic <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="arabic-content">
+        <p>This is my motherland's language</p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 90%;">90%</div>
+    </div>
+  </div>
+
+  <!-- English Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('english')">
+        English <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="english-content">
+        <p>Writing, reading, and speaking perfectly</p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 75%;">75%</div>
+    </div>
+  </div>
+
+  <!-- Swedish Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('swedish')">
+        Swedish <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="swedish-content">
+        <p>Writing, reading, speaking and pronouncing perfectly ;)</p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 75%;">75%</div>
+    </div>
+  </div>
+
+  <!-- Java Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('java')">
+        Java <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="java-content">
+        <p>I can certainly write good programs in Java, but Java is so extensive and versatile that one can never claim to know it all.</p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 50%;">50%</div>
+    </div>
+  </div>
+
+  <!-- C# Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('csharp')">
+        C# <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="csharp-content">
+        <p>C# is not something I have formally studied, but I have tried to self-learn it alongside the Java course I am currently taking.</p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 30%;">30%</div>
+    </div>
+  </div>
+
+  <!-- Docker Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('docker')">
+        Docker <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="docker-content">
+        <p>Docker is so cool that you won't want to stop using it once you understand how it works. It's also something I've self-studied.</p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 90%;">90%</div>
+    </div>
+  </div>
+
+  <!-- Git Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('git')">
+        Git <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="git-content">
+        <p>Git is a very powerful tool that I use every day, and it's something we learned at school.</p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 70%;">70%</div>
+    </div>
+  </div>
+
+  <!-- SQL Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('sql')">
+        SQL <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="sql-content">
+        <p>I learned SQL in school, and I can use it to manage databases, but I prefer working with NoSQL databases.</p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 50%;">50%</div>
+    </div>
+  </div>
+
+  <!-- AWS Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('aws')">
+        AWS <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="aws-content">
+        <p>I'm actively working on expanding my AWS knowledge and learning more about it. Soon, this progress bar will grow rapidly because AWS is so cool. I will work on obtaining a certificate. </p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 15%;">15%</div>
+    </div>
+  </div>
+
+  <!-- Linux Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('linux')">
+        Linux <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="linux-content">
+        <p>I can manage files, move them around, create, delete, and install things. I have Kali on a virtual machine, and I'm learning Linux. Soon, this progress bar will increase significantly.</p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 15%;">15%</div>
+    </div>
+  </div>
+
+  <!-- Frontend Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('frontend')">
+        Frontend (HTML, JS, CSS) <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="dropdown-content" id="frontend-content">
+        <p>It took me a forever to build this website, and it's still not looking good. Personally, I find more enjoyment in solving complex problems and diving into the workings of algorithms than in building a website."</p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 10%;">10%</div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <style>
+
+
+      .card {
+        background-color: #361c1c; /* Change this color to your desired background color */
+        border: 1px solid #5c2e2e; /* Add a border if you like */
+      }
+
+      .card-body {
+        background-color: #10184f; /* Change this color to your desired background color for the card body */
+        color: #ffffff; /* Change this color to your desired text color */
+      }
+
+      .card-title {
+        color: #ffffff; /* Change this color to your desired title color */
+      }
+
+      .card-text {
+        color: #ffffff; /* Change this color to your desired text color */
+      }
+
+      .btn-primary {
+        background-color: #10184f; /* Change this color to your desired button background color */
+        color: #fff; /* Change this color to your desired button text color */
+      }
+      .card-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .card-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      /* Apply the styling to the last two cards with the custom class */
+      .custom-card {
+        width: calc(50% - 10px); /* Adjust the width as needed */
+        margin-bottom: 20px;
+      }
+
+      /* Add this style to set a fixed height for the cards */
+      .card {
+        height: 100%; /* Set a fixed height for the cards */
+      }
+
+
+
+
+    </style>
+
+
+    <div class="card-container">
+
+
+      <div class="card custom-card">
+        <div class="card">
+          <img src="kafka-linux-kurulumu.jpg" class="card-img-top" alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png">
+
+          <div class="card-body">
+            <h5 class="card-title">Kafka Server</h5>
+            <p class="card-text">Kafka server with Docker compose and SQL server and GitHub Actions </p>
+            <a href="https://github.com/Samer-Ismael/AppAndServer" class="btn btn-primary">See on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="card custom-card">
+        <div class="card">
+          <img src="todolist-vert.png" class="card-img-top" alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png">
+
+          <div class="card-body">
+            <h5 class="card-title">ToDo app</h5>
+            <p class="card-text">Nice toDo app with good readme and diagram </p>
+            <a href="https://github.com/Samer-Ismael/ToDoList" class="btn btn-primary">See on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<!-- End of progress bars -->
+<script>
+  // Add JavaScript to animate the progress bars
+  js
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
