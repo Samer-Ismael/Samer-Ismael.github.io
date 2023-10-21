@@ -35,7 +35,7 @@
   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
 
-  <!-- Style for the site -->
+  <!-- Style for the page -->
 
   <style>
     body {
@@ -129,8 +129,9 @@
   </div>
 </nav>
 
-<!-- whoami card -->
-<div class="vr"></div>
+<div class="vr"></div> <!-- Space for pic and card -->
+
+<!-- Container for whoami card -->
 
 <div class="container">
   <div class="row align-items-center">
@@ -145,13 +146,19 @@
             <span class="text-primary">$</span> whoami
           </h3>
           <p class="lead">
-            I'm Samer, and I'm passionate about many things in life. I'm a coffee enthusiast, a guitarist exploring new musical horizons, and an avid fisherman who finds solace by the water.
-            I'm a serious DIY enthusiast, always taking on new projects, and I love to code, exploring the endless possibilities of the digital world.
-            When I'm not behind a computer screen, I'm under the hood of a car, constantly striving for peak performance and style.
+            I'm Samer, and I'm passionate about many things in life. I'm a coffee enthusiast, a guitarist exploring new
+            musical horizons, and an avid fisherman who finds solace by the water.
+            I'm a serious DIY enthusiast, always taking on new projects, and I love to code, exploring the endless
+            possibilities of the digital world.
+            When I'm not behind a computer screen, I'm under the hood of a car, constantly striving for peak performance
+            and style.
 
-            I'm also a student, currently studying as a Java developer specializing in integration at Yrkeshögskola Campus Mölndal.
-            Additionally, I worked for 4 years at MTRX, where my job was to provide top-notch service for our first-class passengers.
-            I'm very skilled at connecting with people and building strong relationships, which made me excel in this role.
+            I'm also a student, currently studying as a Java developer specializing in integration at Yrkeshögskola
+            Campus Mölndal.
+            Additionally, I worked for 4 years at MTRX, where my job was to provide top-notch service for our
+            first-class passengers.
+            I'm very skilled at connecting with people and building strong relationships, which made me excel in this
+            role.
           </p>
         </div>
       </div>
@@ -159,6 +166,7 @@
   </div>
 </div>
 
+<!-- Container for progress-bar -->
 
 <div class="container">
 
@@ -253,193 +261,200 @@
         <i class="fab fa-js icon-gray-hover"></i> <!-- JavaScript symbol -->
       </h2>
       <div class="dropdown-content" id="frontend-content">
-      <p class="lead">
-        It took me a forever to build this website, and it's still not looking good.
-        Personally, I find more enjoyment in solving complex problems and diving into the workings of algorithms than
-        in building a website.
-        However, I acknowledge that website development is a skill worth mastering, and I'm committed to learning and
-        improving it because it's not that complicated to learn.
-      </p>
+        <p class="lead">
+          It took me a forever to build this website, and it's still not looking good.
+          Personally, I find more enjoyment in solving complex problems and diving into the workings of algorithms than
+          in building a website.
+          However, I acknowledge that website development is a skill worth mastering, and I'm committed to learning and
+          improving it because it's not that complicated to learn.
+        </p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 10%;">10%</div>
     </div>
   </div>
-  <div class="progress">
-    <div class="progress-bar" style="width: 10%;">10%</div>
-  </div>
-</div>
 
-<!-- SQL Progress Bar -->
+  <!-- SQL Progress Bar -->
   <div class="progress-container">
-  <div class="dropdown">
-    <h2 class="text-left clickable" onclick="toggleDropdown('sql')">
-      <i class="fas fa-database icon-gray-hover"></i>
-      <!-- This is a placeholder for an SQL icon, you can replace it with the actual SQL icon class -->
-    </h2>
-    <div class="dropdown-content" id="sql-content">
-      <p class="lead">
-        I learned SQL in school, and I can use it to manage databases, but I prefer working with NoSQL databases.
-      </p>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('sql')">
+        <i class="fas fa-database icon-gray-hover"></i>
+        <!-- This is a placeholder for an SQL icon, you can replace it with the actual SQL icon class -->
+      </h2>
+      <div class="dropdown-content" id="sql-content">
+        <p class="lead">
+          I learned SQL in school, and I can use it to manage databases, but I prefer working with NoSQL databases.
+        </p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 50%;">50%</div>
     </div>
   </div>
-  <div class="progress">
-    <div class="progress-bar" style="width: 50%;">50%</div>
-  </div>
-</div>
 
-<!-- Git Progress Bar -->
+  <!-- Git Progress Bar -->
   <div class="progress-container">
-  <div class="dropdown">
-    <h2 class="text-left clickable" onclick="toggleDropdown('git')">
-      <i class="fab fa-git icon-gray-hover"></i>
-      <!-- This is a placeholder for a Git icon, replace it with the actual Git icon class if available -->
-    </h2>
-    <div class="dropdown-content" id="git-content">
-      <p class="lead">
-        Git is a very powerful tool that I use every day, and it's something we learned at school.
-      </p>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('git')">
+        <i class="fab fa-git icon-gray-hover"></i>
+        <!-- This is a placeholder for a Git icon, replace it with the actual Git icon class if available -->
+      </h2>
+      <div class="dropdown-content" id="git-content">
+        <p class="lead">
+          Git is a very powerful tool that I use every day, and it's something we learned at school.
+        </p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 90%;">90%</div>
     </div>
   </div>
-  <div class="progress">
-    <div class="progress-bar" style="width: 90%;">90%</div>
-  </div>
-</div>
 
-<!-- Docker Progress Bar -->
+  <!-- Docker Progress Bar -->
   <div class="progress-container">
-  <div class="dropdown">
-    <h2 class="text-left clickable" onclick="toggleDropdown('docker')">
-      <i class="fab fa-docker icon-gray-hover"></i>
-      <!-- This is a placeholder for a Docker icon, replace it with the actual Docker icon class if available -->
-    </h2>
-    <div class="dropdown-content" id="docker-content">
-      <p class="lead">
-        Docker is amazing because once you figure out how it operates, you'll be hooked! I learned it on my own.
-        It's like having a toolbox full of magical tools for your computer, and I can't get enough of it.
-      </p>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('docker')">
+        <i class="fab fa-docker icon-gray-hover"></i>
+        <!-- This is a placeholder for a Docker icon, replace it with the actual Docker icon class if available -->
+      </h2>
+      <div class="dropdown-content" id="docker-content">
+        <p class="lead">
+          Docker is amazing because once you figure out how it operates, you'll be hooked! I learned it on my own.
+          It's like having a toolbox full of magical tools for your computer, and I can't get enough of it.
+        </p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 75%;">75%</div>
     </div>
   </div>
-  <div class="progress">
-    <div class="progress-bar" style="width: 75%;">75%</div>
-  </div>
-</div>
 
-<!-- AWS Progress Bar -->
+  <!-- AWS Progress Bar -->
   <div class="progress-container">
-  <div class="dropdown">
-    <h2 class="text-left clickable" onclick="toggleDropdown('aws')">
-      <i class="fab fa-aws icon-gray-hover"></i>
-      <!-- This is a placeholder for an AWS icon, replace it with the actual AWS icon class if available -->
-    </h2>
-    <div class="dropdown-content" id="aws-content">
-      <p class="lead">
-        I'm actively working on expanding my AWS knowledge and learning more about it. Soon, this progress bar will
-        grow rapidly because AWS is so cool. I will work on obtaining a certificate.
-      </p>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('aws')">
+        <i class="fab fa-aws icon-gray-hover"></i>
+        <!-- This is a placeholder for an AWS icon, replace it with the actual AWS icon class if available -->
+      </h2>
+      <div class="dropdown-content" id="aws-content">
+        <p class="lead">
+          I'm actively working on expanding my AWS knowledge and learning more about it. Soon, this progress bar will
+          grow rapidly because AWS is so cool. I will work on obtaining a certificate.
+        </p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 15%;">15%</div>
     </div>
   </div>
-  <div class="progress">
-    <div class="progress-bar" style="width: 15%;">15%</div>
-  </div>
-</div>
 
-<!-- Linux Progress Bar -->
+  <!-- Linux Progress Bar -->
   <div class="progress-container">
-  <div class="dropdown">
-    <h2 class="text-left clickable" onclick="toggleDropdown('linux')">
-      <i class="fab fa-linux icon-gray-hover"></i>
-      <!-- This is a placeholder for a Linux icon, replace it with the actual Linux icon class if available -->
-    </h2>
-    <div class="dropdown-content" id="linux-content">
-      <p class="lead">
-        I can manage files, move them around, create, delete, and install things. I have Kali on a virtual machine,
-        and I'm learning Linux. Soon, this progress bar will increase significantly.
-      </p>
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('linux')">
+        <i class="fab fa-linux icon-gray-hover"></i>
+        <!-- This is a placeholder for a Linux icon, replace it with the actual Linux icon class if available -->
+      </h2>
+      <div class="dropdown-content" id="linux-content">
+        <p class="lead">
+          I can manage files, move them around, create, delete, and install things. I have Kali on a virtual machine,
+          and I'm learning Linux. Soon, this progress bar will increase significantly.
+        </p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 15%;">15%</div>
     </div>
   </div>
-  <div class="progress">
-    <div class="progress-bar" style="width: 15%;">15%</div>
-  </div>
+
+
 </div>
 
+<!-- Container for cards -->
+
+<div class="container">
 
   <!-- Style for cards -->
 
-    <style>
+  <style>
 
-      /* Update card styles */
-      .card {
-        background-color: #03021e; /* Change this color to your desired background color */
-        border: 1px solid #03021e; /* Add a border if you like */
-        height: 100%; /* Set a fixed height for the cards */
-      }
+    /* Update card styles */
+    .card {
+      background-color: #03021e; /* Change this color to your desired background color */
+      border: 1px solid #03021e; /* Add a border if you like */
+      height: 100%; /* Set a fixed height for the cards */
+    }
 
-      .card-body {
-        background-color: #03021e; /* Change this color to your desired background color for the card body */
-        color: #e0e0e0; /* Change this color to your desired text color */
-      }
+    .card-body {
+      background-color: #03021e; /* Change this color to your desired background color for the card body */
+      color: #e0e0e0; /* Change this color to your desired text color */
+    }
 
-      .card-title {
-        color: #e0e0e0; /* Change this color to your desired title color */
-      }
+    .card-title {
+      color: #e0e0e0; /* Change this color to your desired title color */
+    }
 
-      .card-text {
-        color: #e0e0e0; /* Change this color to your desired text color */
-      }
+    .card-text {
+      color: #e0e0e0; /* Change this color to your desired text color */
+    }
 
-      .btn-primary {
-        background-color: #083430; /* Change this color to your desired button background color */
-        color: #e0e0e0; /* Change this color to your desired button text color */
-      }
+    .btn-primary {
+      background-color: #083430; /* Change this color to your desired button background color */
+      color: #e0e0e0; /* Change this color to your desired button text color */
+    }
 
-      /* Update card container styles */
-      .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
+    /* Update card container styles */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-      /* Apply the styling to the last two cards with the custom class */
-      .custom-card {
-        width: calc(50% - 10px); /* Adjust the width as needed */
-        margin-bottom: 20px;
-      }
+    /* Apply the styling to the last two cards with the custom class */
+    .custom-card {
+      width: calc(50% - 10px); /* Adjust the width as needed */
+      margin-bottom: 20px;
+    }
 
-      .card-img-top {
-        max-height: 400px; /* Adjust the max-height as needed */
-      }
+    .card-img-top {
+      max-height: 400px; /* Adjust the max-height as needed */
+    }
 
-    </style>
+  </style>
 
   <!-- code for cards -->
 
-    <div class="card-container">
+  <div class="card-container">
 
-      <div class="card custom-card">
-        <div class="card">
-          <img alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png" class="card-img-top"
-               src="kafka-linux-kurulumu.jpg">
-          <div class="card-body">
-            <h5 class="card-title">Kafka Server</h5>
-            <p class="card-text">Kafka server with Docker compose and SQL server and GitHub Actions </p>
-            <a class="btn btn-primary" href="https://github.com/Samer-Ismael/AppAndServer">See on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <div class="card custom-card">
-        <div class="card">
-          <img alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png" class="card-img-top"
-               src="todolist-vert.png">
-          <div class="card-body">
-            <h5 class="card-title">ToDo app</h5>
-            <p class="card-text">Nice toDo app with good readme and diagram </p>
-            <a class="btn btn-primary" href="https://github.com/Samer-Ismael/ToDoList">See on GitHub</a>
-          </div>
+    <div class="card custom-card">
+      <div class="card">
+        <img alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png" class="card-img-top"
+             src="kafka-linux-kurulumu.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Kafka Server</h5>
+          <p class="card-text">Kafka server with Docker compose and SQL server and GitHub Actions </p>
+          <a class="btn btn-primary" href="https://github.com/Samer-Ismael/AppAndServer">See on GitHub</a>
         </div>
       </div>
     </div>
-
+    <div class="card custom-card">
+      <div class="card">
+        <img alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png" class="card-img-top"
+             src="todolist-vert.png">
+        <div class="card-body">
+          <h5 class="card-title">ToDo app</h5>
+          <p class="card-text">Nice toDo app with good readme and diagram </p>
+          <a class="btn btn-primary" href="https://github.com/Samer-Ismael/ToDoList">See on GitHub</a>
+        </div>
+      </div>
+    </div>
   </div>
 
+
 </div>
+
+
 
 <script crossorigin="anonymous"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
