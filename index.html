@@ -76,6 +76,46 @@
     }
   </style>
 
+  <!-- script to copy the phone number -->
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const phoneLink = document.getElementById('phone-link');
+
+      phoneLink.addEventListener('click', function(event) {
+        const phoneNumber = phoneLink.textContent.trim();
+
+        // Create a text area to facilitate copying
+        const textArea = document.createElement('textarea');
+        textArea.value = phoneNumber;
+
+        // Append the text area to the document and select its contents
+        document.body.appendChild(textArea);
+        textArea.select();
+
+        // Execute the copy command
+        document.execCommand('copy');
+
+        // Remove the text area from the document
+        document.body.removeChild(textArea);
+
+        // Provide visual feedback to the user
+        phoneLink.textContent = 'Copied!';
+
+        // Reset the text after a moment (optional)
+        setTimeout(function() {
+          phoneLink.textContent = phoneNumber;
+        }, 2000);
+
+        // Prevent the default click behavior
+        event.preventDefault();
+      });
+    });
+
+  </script>
+
+
   <div class="container">
     <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
             data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
@@ -99,7 +139,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="tel:0729277341">
+          <a id="phone-link" class="nav-link">
             <i class="fas fa-phone"></i> 0729 277 341
           </a>
         </li>
