@@ -13,6 +13,18 @@
   <meta name="theme-color" content="#fafafa">
   <script src="script.js"></script>
 
+  <style>
+    /* styles.css */
+    .hover-image {
+      transition: transform 0.3s;
+    }
+
+    .hovered {
+      transform: scale(1.2); /* Adjust the scale factor as needed */
+    }
+
+  </style>
+
 </head>
 <body>
 <!-- Navbar cod -->
@@ -158,7 +170,7 @@
 <div class="container">
   <div class="row align-items-center">
     <div class="col-lg-4 text-center">
-      <img alt="Your Image" class="img-fluid rounded" src="20220717_200612.jpg"
+      <img alt="Your Image" class="img-fluid rounded hover-image" src="20220717_200612.jpg"
            style="max-width: 350px; max-height: 350px;">
     </div>
     <div class="col-lg-8">
@@ -186,7 +198,7 @@
       </div>
     </div>
   </div>
-   <!-- This is the horizontal line -->
+  <!-- This is the horizontal line -->
   <div class="progress-label text-left" style="float: left;">Noob</div>
   <div class="progress-label text-right" style="float: right;">Expert</div>
   <hr>
@@ -484,5 +496,46 @@
 <script crossorigin="anonymous"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // script.js
+  const image = document.querySelector(".hover-image");
+  let isHovered = false;
+
+  image.addEventListener("mouseenter", () => {
+    isHovered = true;
+    enlargeImage();
+  });
+
+  image.addEventListener("mouseleave", () => {
+    isHovered = false;
+    resetImage();
+  });
+
+  image.addEventListener("mousemove", tiltImage);
+
+  function tiltImage(e) {
+    if (isHovered) {
+      const centerX = image.offsetWidth / 2;
+      const centerY = image.offsetHeight / 2;
+      const mouseX = e ? e.offsetX : centerX;
+      const mouseY = e ? e.offsetY : centerY;
+
+      const moveX = (mouseX - centerX) / 5; // Adjust the value for faster movement
+      const moveY = (mouseY - centerY) / 5; // Adjust the value for faster movement
+
+      image.style.transform = `rotateX(${moveY}deg) rotateY(${moveX}deg) scale(1.2)`;
+    }
+  }
+
+  function enlargeImage() {
+    image.classList.add("hovered");
+  }
+
+  function resetImage() {
+    image.style.transform = "scale(1) rotateX(0) rotateY(0)";
+    image.classList.remove("hovered");
+  }
+</script>
+
 </body>
 </html>
