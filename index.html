@@ -188,7 +188,7 @@
           <h3 class="card-title text-center">
             <span class="text-primary">$</span> whoami
           </h3>
-          <p class="lead">
+          <p class="lead1">
             I'm Samer, and I'm passionate about many things in life. I'm a coffee enthusiast, a guitarist exploring new
             musical horizons, and an avid fisherman who finds solace by the water.
             I'm a serious DIY enthusiast, always taking on new projects, and I love to code, exploring the endless
@@ -264,6 +264,20 @@
       animation: fadeIn 1s;
     }
 
+    .lead {
+      animation: dropDown 300ms ease;
+      transform-origin: top center;
+    }
+    @keyframes dropDown {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
 
   </style>
 
