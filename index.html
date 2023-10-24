@@ -109,12 +109,14 @@
         // Remove the text area from the document
         document.body.removeChild(textArea);
 
-        // Provide visual feedback to the user
-        phoneLink.textContent = 'Copied!';
+        // Provide visual feedback with a thumbs-up and spinning animation
+        phoneLink.innerHTML = "Copied 👍";
+        phoneLink.classList.add("copy-feedback");
 
-        // Reset the text after a moment (optional)
+        // Reset the text and animation after a moment (optional)
         setTimeout(function() {
-          phoneLink.textContent = phoneNumber;
+          phoneLink.innerHTML = phoneNumber;
+          phoneLink.classList.remove("copy-feedback");
         }, 2000);
 
         // Prevent the default click behavior
