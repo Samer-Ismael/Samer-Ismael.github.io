@@ -252,11 +252,11 @@
       text-align: left;
     }
 
-    .progress-container h2 {
-      font-size: 24px;
-      margin: 10px 0;
-      color: #e0e0e0;
-    }
+      .progress-container h2 {
+        font-size: 24px;
+        margin: 10px 0;
+        color: #e0e0e0;
+      }
 
     .progress {
       background-color: #4d5158;
@@ -277,6 +277,7 @@
       0% {
         opacity: 0;
       }
+
       100% {
         opacity: 1;
       }
@@ -291,11 +292,9 @@
       animation: dropDown 300ms ease;
       transform-origin: top center;
     }
-
   </style>
 
   <!-- code for progress-bar -->
-
   <!-- Java Progress Bar -->
   <div class="progress-container">
     <div class="dropdown">
@@ -333,7 +332,26 @@
       </div>
     </div>
     <div class="progress">
-      <div class="progress-bar" style="width: 37%;">37%</div>
+      <div class="progress-bar" style="width: 50%;">50%</div>
+    </div>
+  </div>
+
+  <!-- Python Progress Bar -->
+  <div class="progress-container">
+    <div class="dropdown">
+      <h2 class="text-left clickable" onclick="toggleDropdown('python')">
+        <i class="fab fa-python icon-gray-hover"></i>
+        <!-- This is a placeholder for a Python icon, you can replace it with the actual Python icon class -->
+      </h2>
+      <div class="dropdown-content" id="python-content">
+        <p class="lead">
+          I've created several applications in Python and have a good grasp of the language. From managing projects to
+          implementing solutions, I'm comfortable working with Python.
+        </p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 40%;">40%</div>
     </div>
   </div>
 
@@ -445,13 +463,12 @@
       </h2>
       <div class="dropdown-content" id="aws-content">
         <p class="lead">
-          I'm actively working on expanding my AWS knowledge and learning more about it. Soon, this progress bar will
-          grow rapidly because AWS is so cool. I will work on obtaining a certificate.
+          I'm actively working on expanding my AWS knowledge and learning more about it. I have AWS Knowledge badge: Cloud Essentials
         </p>
       </div>
     </div>
     <div class="progress">
-      <div class="progress-bar" style="width: 20%;">20%</div>
+      <div class="progress-bar" style="width: 60%;">60%</div>
     </div>
   </div>
 
@@ -535,23 +552,23 @@
 
     <div class="card custom-card with-shadow">
       <div class="card">
-        <img alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png" class="card-img-top"
-             src="kafka-linux-kurulumu.jpg">
+        <img alt="java-app.jpeg" class="card-img-top"
+             src="java-app.jpeg">
         <div class="card-body">
-          <h5 class="card-title">Kafka Server</h5>
-          <p class="card-text">Kafka server with Docker compose and SQL server and GitHub Actions </p>
-          <a class="btn btn-primary" href="https://github.com/Samer-Ismael/AppAndServer">See on GitHub</a>
+          <h5 class="card-title">Spring boot AWS CRUD</h5>
+          <p class="card-text">A nice teamwork app i worked on with classments  </p>
+          <a class="btn btn-primary" href="https://github.com/Samer-Ismael/Book_Pipeline">See on GitHub</a>
         </div>
       </div>
     </div>
     <div class="card custom-card with-shadow">
       <div class="card">
-        <img alt="63511d009becceb74370860f_Blog_SQL Server and Kafca CDC.png" class="card-img-top"
-             src="todolist-vert.png">
+        <img alt="cloodPrint.jpeg" class="card-img-top"
+             src="cloodPrint.jpeg">
         <div class="card-body">
-          <h5 class="card-title">ToDo app</h5>
-          <p class="card-text">Nice toDo app with good readme and diagram </p>
-          <a class="btn btn-primary" href="https://github.com/Samer-Ismael/ToDoList">See on GitHub</a>
+          <h5 class="card-title">Cloud Print</h5>
+          <p class="card-text">Nice app for connecting 3D printer to a Raspberry pi and cloud </p>
+          <a class="btn btn-primary" href="https://github.com/Samer-Ismael/PrinterFE">See on GitHub</a>
         </div>
       </div>
     </div>
